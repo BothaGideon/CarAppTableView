@@ -13,6 +13,11 @@
 		4C11E12C26CBD84C00CEB171 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C11E12A26CBD84C00CEB171 /* Main.storyboard */; };
 		4C11E12E26CBD85D00CEB171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C11E12D26CBD85D00CEB171 /* Assets.xcassets */; };
 		4C11E13126CBD85D00CEB171 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C11E12F26CBD85D00CEB171 /* LaunchScreen.storyboard */; };
+		4C11E13A26CBDC2800CEB171 /* CarBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C11E13926CBDC2800CEB171 /* CarBrand.swift */; };
+		4C11E13D26CBDC8200CEB171 /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C11E13C26CBDC8200CEB171 /* CarModel.swift */; };
+		4C11E13F26CBDD7400CEB171 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C11E13E26CBDD7400CEB171 /* Review.swift */; };
+		4CD39C3926CCFC5300FE4042 /* dataSourceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD39C3826CCFC5300FE4042 /* dataSourceProvider.swift */; };
+		4CD39C3B26CD017D00FE4042 /* CarDetailDrillDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD39C3A26CD017D00FE4042 /* CarDetailDrillDownViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		4C11E12D26CBD85D00CEB171 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C11E13026CBD85D00CEB171 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C11E13226CBD85D00CEB171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C11E13926CBDC2800CEB171 /* CarBrand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBrand.swift; sourceTree = "<group>"; };
+		4C11E13C26CBDC8200CEB171 /* CarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModel.swift; sourceTree = "<group>"; };
+		4C11E13E26CBDD7400CEB171 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		4CD39C3826CCFC5300FE4042 /* dataSourceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataSourceProvider.swift; sourceTree = "<group>"; };
+		4CD39C3A26CD017D00FE4042 /* CarDetailDrillDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailDrillDownViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,9 @@
 		4C11E12326CBD84C00CEB171 /* CarAppTableView */ = {
 			isa = PBXGroup;
 			children = (
+				4CD39C0C26CE45AD0005E006 /* CustomCells */,
+				4CD39C3726CCFC1400FE4042 /* DataSource */,
+				4C11E13826CBDC0900CEB171 /* Classes */,
 				4C11E12426CBD84C00CEB171 /* AppDelegate.swift */,
 				4C11E12626CBD84C00CEB171 /* SceneDelegate.swift */,
 				4C11E12826CBD84C00CEB171 /* ViewController.swift */,
@@ -63,8 +76,34 @@
 				4C11E12D26CBD85D00CEB171 /* Assets.xcassets */,
 				4C11E12F26CBD85D00CEB171 /* LaunchScreen.storyboard */,
 				4C11E13226CBD85D00CEB171 /* Info.plist */,
+				4CD39C3A26CD017D00FE4042 /* CarDetailDrillDownViewController.swift */,
 			);
 			path = CarAppTableView;
+			sourceTree = "<group>";
+		};
+		4C11E13826CBDC0900CEB171 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4C11E13926CBDC2800CEB171 /* CarBrand.swift */,
+				4C11E13C26CBDC8200CEB171 /* CarModel.swift */,
+				4C11E13E26CBDD7400CEB171 /* Review.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4CD39C0C26CE45AD0005E006 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		4CD39C3726CCFC1400FE4042 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				4CD39C3826CCFC5300FE4042 /* dataSourceProvider.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +176,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CD39C3B26CD017D00FE4042 /* CarDetailDrillDownViewController.swift in Sources */,
 				4C11E12926CBD84C00CEB171 /* ViewController.swift in Sources */,
 				4C11E12526CBD84C00CEB171 /* AppDelegate.swift in Sources */,
+				4CD39C3926CCFC5300FE4042 /* dataSourceProvider.swift in Sources */,
+				4C11E13D26CBDC8200CEB171 /* CarModel.swift in Sources */,
+				4C11E13A26CBDC2800CEB171 /* CarBrand.swift in Sources */,
 				4C11E12726CBD84C00CEB171 /* SceneDelegate.swift in Sources */,
+				4C11E13F26CBDD7400CEB171 /* Review.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
